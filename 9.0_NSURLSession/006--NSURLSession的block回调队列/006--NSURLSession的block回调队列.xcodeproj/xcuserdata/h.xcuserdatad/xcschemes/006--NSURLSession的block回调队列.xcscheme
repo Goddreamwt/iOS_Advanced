@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0810"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07C05EBF1E5B3EAE00ED4A73"
+               BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.app"
+               BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;"
+               ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07C05ED81E5B3EAE00ED4A73"
+               BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;Tests.xctest"
+               BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;Tests"
+               ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07C05EE31E5B3EAE00ED4A73"
+               BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;UITests.xctest"
+               BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;UITests"
+               ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07C05EBF1E5B3EAE00ED4A73"
+            BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.app"
+            BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;"
+            ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07C05EBF1E5B3EAE00ED4A73"
+            BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.app"
+            BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;"
+            ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07C05EBF1E5B3EAE00ED4A73"
+            BuildableName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.app"
+            BlueprintName = "006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;"
+            ReferencedContainer = "container:006--NSURLSession&#x7684;block&#x56de;&#x8c03;&#x961f;&#x5217;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
