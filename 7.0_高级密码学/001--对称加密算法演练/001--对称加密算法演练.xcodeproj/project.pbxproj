@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0717D5D01E54818B00D925E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D5CF1E54818B00D925E7 /* main.m */; };
+		0717D5D31E54818B00D925E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D5D21E54818B00D925E7 /* AppDelegate.m */; };
+		0717D5D61E54818B00D925E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D5D51E54818B00D925E7 /* ViewController.m */; };
+		0717D5D91E54818B00D925E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0717D5D71E54818B00D925E7 /* Main.storyboard */; };
+		0717D5DB1E54818B00D925E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0717D5DA1E54818B00D925E7 /* Assets.xcassets */; };
+		0717D5DE1E54818B00D925E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0717D5DC1E54818B00D925E7 /* LaunchScreen.storyboard */; };
+		0717D5E91E54818B00D925E7 /* _01__________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D5E81E54818B00D925E7 /* _01__________Tests.m */; };
+		0717D5F41E54818B00D925E7 /* _01__________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D5F31E54818B00D925E7 /* _01__________UITests.m */; };
+		0717D6041E5481D400D925E7 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717D6031E5481D400D925E7 /* EncryptionTools.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0717D5E51E54818B00D925E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0717D5C31E54818B00D925E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0717D5CA1E54818B00D925E7;
+			remoteInfo = "001--对称加密算法演练";
+		};
+		0717D5F01E54818B00D925E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0717D5C31E54818B00D925E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0717D5CA1E54818B00D925E7;
+			remoteInfo = "001--对称加密算法演练";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0717D5CB1E54818B00D925E7 /* 001--对称加密算法演练.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "001--对称加密算法演练.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0717D5CF1E54818B00D925E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0717D5D11E54818B00D925E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0717D5D21E54818B00D925E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0717D5D41E54818B00D925E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0717D5D51E54818B00D925E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0717D5D81E54818B00D925E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0717D5DA1E54818B00D925E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0717D5DD1E54818B00D925E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0717D5DF1E54818B00D925E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0717D5E41E54818B00D925E7 /* 001--对称加密算法演练Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "001--对称加密算法演练Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0717D5E81E54818B00D925E7 /* _01__________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_01__________Tests.m"; sourceTree = "<group>"; };
+		0717D5EA1E54818B00D925E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0717D5EF1E54818B00D925E7 /* 001--对称加密算法演练UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "001--对称加密算法演练UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0717D5F31E54818B00D925E7 /* _01__________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_01__________UITests.m"; sourceTree = "<group>"; };
+		0717D5F51E54818B00D925E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0717D6021E5481D400D925E7 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
+		0717D6031E5481D400D925E7 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0717D5C81E54818B00D925E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5E11E54818B00D925E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5EC1E54818B00D925E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0717D5C21E54818B00D925E7 = {
+			isa = PBXGroup;
+			children = (
+				0717D5CD1E54818B00D925E7 /* 001--对称加密算法演练 */,
+				0717D5E71E54818B00D925E7 /* 001--对称加密算法演练Tests */,
+				0717D5F21E54818B00D925E7 /* 001--对称加密算法演练UITests */,
+				0717D5CC1E54818B00D925E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0717D5CC1E54818B00D925E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0717D5CB1E54818B00D925E7 /* 001--对称加密算法演练.app */,
+				0717D5E41E54818B00D925E7 /* 001--对称加密算法演练Tests.xctest */,
+				0717D5EF1E54818B00D925E7 /* 001--对称加密算法演练UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0717D5CD1E54818B00D925E7 /* 001--对称加密算法演练 */ = {
+			isa = PBXGroup;
+			children = (
+				0717D6011E5481D400D925E7 /* Cipher */,
+				0717D5D11E54818B00D925E7 /* AppDelegate.h */,
+				0717D5D21E54818B00D925E7 /* AppDelegate.m */,
+				0717D5D41E54818B00D925E7 /* ViewController.h */,
+				0717D5D51E54818B00D925E7 /* ViewController.m */,
+				0717D5D71E54818B00D925E7 /* Main.storyboard */,
+				0717D5DA1E54818B00D925E7 /* Assets.xcassets */,
+				0717D5DC1E54818B00D925E7 /* LaunchScreen.storyboard */,
+				0717D5DF1E54818B00D925E7 /* Info.plist */,
+				0717D5CE1E54818B00D925E7 /* Supporting Files */,
+			);
+			path = "001--对称加密算法演练";
+			sourceTree = "<group>";
+		};
+		0717D5CE1E54818B00D925E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0717D5CF1E54818B00D925E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0717D5E71E54818B00D925E7 /* 001--对称加密算法演练Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0717D5E81E54818B00D925E7 /* _01__________Tests.m */,
+				0717D5EA1E54818B00D925E7 /* Info.plist */,
+			);
+			path = "001--对称加密算法演练Tests";
+			sourceTree = "<group>";
+		};
+		0717D5F21E54818B00D925E7 /* 001--对称加密算法演练UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0717D5F31E54818B00D925E7 /* _01__________UITests.m */,
+				0717D5F51E54818B00D925E7 /* Info.plist */,
+			);
+			path = "001--对称加密算法演练UITests";
+			sourceTree = "<group>";
+		};
+		0717D6011E5481D400D925E7 /* Cipher */ = {
+			isa = PBXGroup;
+			children = (
+				0717D6021E5481D400D925E7 /* EncryptionTools.h */,
+				0717D6031E5481D400D925E7 /* EncryptionTools.m */,
+			);
+			path = Cipher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0717D5CA1E54818B00D925E7 /* 001--对称加密算法演练 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0717D5F81E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练" */;
+			buildPhases = (
+				0717D5C71E54818B00D925E7 /* Sources */,
+				0717D5C81E54818B00D925E7 /* Frameworks */,
+				0717D5C91E54818B00D925E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "001--对称加密算法演练";
+			productName = "001--对称加密算法演练";
+			productReference = 0717D5CB1E54818B00D925E7 /* 001--对称加密算法演练.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0717D5E31E54818B00D925E7 /* 001--对称加密算法演练Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0717D5FB1E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练Tests" */;
+			buildPhases = (
+				0717D5E01E54818B00D925E7 /* Sources */,
+				0717D5E11E54818B00D925E7 /* Frameworks */,
+				0717D5E21E54818B00D925E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0717D5E61E54818B00D925E7 /* PBXTargetDependency */,
+			);
+			name = "001--对称加密算法演练Tests";
+			productName = "001--对称加密算法演练Tests";
+			productReference = 0717D5E41E54818B00D925E7 /* 001--对称加密算法演练Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0717D5EE1E54818B00D925E7 /* 001--对称加密算法演练UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0717D5FE1E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练UITests" */;
+			buildPhases = (
+				0717D5EB1E54818B00D925E7 /* Sources */,
+				0717D5EC1E54818B00D925E7 /* Frameworks */,
+				0717D5ED1E54818B00D925E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0717D5F11E54818B00D925E7 /* PBXTargetDependency */,
+			);
+			name = "001--对称加密算法演练UITests";
+			productName = "001--对称加密算法演练UITests";
+			productReference = 0717D5EF1E54818B00D925E7 /* 001--对称加密算法演练UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0717D5C31E54818B00D925E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = TZ;
+				TargetAttributes = {
+					0717D5CA1E54818B00D925E7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					0717D5E31E54818B00D925E7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0717D5CA1E54818B00D925E7;
+					};
+					0717D5EE1E54818B00D925E7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0717D5CA1E54818B00D925E7;
+					};
+				};
+			};
+			buildConfigurationList = 0717D5C61E54818B00D925E7 /* Build configuration list for PBXProject "001--对称加密算法演练" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0717D5C21E54818B00D925E7;
+			productRefGroup = 0717D5CC1E54818B00D925E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0717D5CA1E54818B00D925E7 /* 001--对称加密算法演练 */,
+				0717D5E31E54818B00D925E7 /* 001--对称加密算法演练Tests */,
+				0717D5EE1E54818B00D925E7 /* 001--对称加密算法演练UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0717D5C91E54818B00D925E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D5DE1E54818B00D925E7 /* LaunchScreen.storyboard in Resources */,
+				0717D5DB1E54818B00D925E7 /* Assets.xcassets in Resources */,
+				0717D5D91E54818B00D925E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5E21E54818B00D925E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5ED1E54818B00D925E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0717D5C71E54818B00D925E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D6041E5481D400D925E7 /* EncryptionTools.m in Sources */,
+				0717D5D61E54818B00D925E7 /* ViewController.m in Sources */,
+				0717D5D31E54818B00D925E7 /* AppDelegate.m in Sources */,
+				0717D5D01E54818B00D925E7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5E01E54818B00D925E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D5E91E54818B00D925E7 /* _01__________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0717D5EB1E54818B00D925E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D5F41E54818B00D925E7 /* _01__________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0717D5E61E54818B00D925E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0717D5CA1E54818B00D925E7 /* 001--对称加密算法演练 */;
+			targetProxy = 0717D5E51E54818B00D925E7 /* PBXContainerItemProxy */;
+		};
+		0717D5F11E54818B00D925E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0717D5CA1E54818B00D925E7 /* 001--对称加密算法演练 */;
+			targetProxy = 0717D5F01E54818B00D925E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0717D5D71E54818B00D925E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0717D5D81E54818B00D925E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0717D5DC1E54818B00D925E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0717D5DD1E54818B00D925E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0717D5F61E54818B00D925E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0717D5F71E54818B00D925E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0717D5F91E54818B00D925E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "001--对称加密算法演练/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0717D5FA1E54818B00D925E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "001--对称加密算法演练/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0717D5FC1E54818B00D925E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "001--对称加密算法演练Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/001--对称加密算法演练.app/001--对称加密算法演练";
+			};
+			name = Debug;
+		};
+		0717D5FD1E54818B00D925E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "001--对称加密算法演练Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/001--对称加密算法演练.app/001--对称加密算法演练";
+			};
+			name = Release;
+		};
+		0717D5FF1E54818B00D925E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "001--对称加密算法演练UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "001--对称加密算法演练";
+			};
+			name = Debug;
+		};
+		0717D6001E54818B00D925E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "001--对称加密算法演练UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanzhouedu.-01----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "001--对称加密算法演练";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0717D5C61E54818B00D925E7 /* Build configuration list for PBXProject "001--对称加密算法演练" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0717D5F61E54818B00D925E7 /* Debug */,
+				0717D5F71E54818B00D925E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0717D5F81E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0717D5F91E54818B00D925E7 /* Debug */,
+				0717D5FA1E54818B00D925E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0717D5FB1E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0717D5FC1E54818B00D925E7 /* Debug */,
+				0717D5FD1E54818B00D925E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0717D5FE1E54818B00D925E7 /* Build configuration list for PBXNativeTarget "001--对称加密算法演练UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0717D5FF1E54818B00D925E7 /* Debug */,
+				0717D6001E54818B00D925E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0717D5C31E54818B00D925E7 /* Project object */;
+}
