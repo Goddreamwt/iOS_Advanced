@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0778E1D210AF1660025EB82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E1C210AF1660025EB82 /* AppDelegate.m */; };
+		D0778E20210AF1660025EB82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E1F210AF1660025EB82 /* ViewController.m */; };
+		D0778E23210AF1660025EB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0778E21210AF1660025EB82 /* Main.storyboard */; };
+		D0778E25210AF1670025EB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0778E24210AF1670025EB82 /* Assets.xcassets */; };
+		D0778E28210AF1670025EB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0778E26210AF1670025EB82 /* LaunchScreen.storyboard */; };
+		D0778E2B210AF1670025EB82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E2A210AF1670025EB82 /* main.m */; };
+		D0778E34210AF18F0025EB82 /* DSLViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E33210AF18F0025EB82 /* DSLViewMaker.m */; };
+		D0778E37210AF5360025EB82 /* DSLImageViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E36210AF5360025EB82 /* DSLImageViewMaker.m */; };
+		D0778E3A210C14710025EB82 /* DSLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E39210C14710025EB82 /* DSLObject.m */; };
+		D0778E3D210C4C260025EB82 /* UIView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E3C210C4C260025EB82 /* UIView+DSL.m */; };
+		D0778E40210C78EB0025EB82 /* UIImageView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E3F210C78EB0025EB82 /* UIImageView+DSL.m */; };
+		D0778E43210C89030025EB82 /* UIControl+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E42210C89030025EB82 /* UIControl+DSL.m */; };
+		D0778E46210C93840025EB82 /* UIButton+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E45210C93840025EB82 /* UIButton+DSL.m */; };
+		D0778E49210D59BD0025EB82 /* UILabel+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E48210D59BD0025EB82 /* UILabel+DSL.m */; };
+		D0778E4C210D71330025EB82 /* UITextField+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E4B210D71330025EB82 /* UITextField+DSL.m */; };
+		D0778E4F210D89050025EB82 /* UIScrollView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E4E210D89050025EB82 /* UIScrollView+DSL.m */; };
+		D0778E94210EF0890025EB82 /* UICollectionView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E93210EF0890025EB82 /* UICollectionView+DSL.m */; };
+		D0778E97210F05800025EB82 /* UITableView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778E96210F05800025EB82 /* UITableView+DSL.m */; };
+		D0778ECD211141760025EB82 /* UIView+DSLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778ECC211141760025EB82 /* UIView+DSLMaker.m */; };
+		D0778ED0211141A50025EB82 /* UIImageView+DSLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0778ECF211141A50025EB82 /* UIImageView+DSLMaker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0778E18210AF1660025EB82 /* DSL2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSL2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0778E1B210AF1660025EB82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0778E1C210AF1660025EB82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0778E1E210AF1660025EB82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0778E1F210AF1660025EB82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0778E22210AF1660025EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0778E24210AF1670025EB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0778E27210AF1670025EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0778E29210AF1670025EB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0778E2A210AF1670025EB82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0778E31210AF1800025EB82 /* DSLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLHeader.h; sourceTree = "<group>"; };
+		D0778E32210AF18F0025EB82 /* DSLViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLViewMaker.h; sourceTree = "<group>"; };
+		D0778E33210AF18F0025EB82 /* DSLViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLViewMaker.m; sourceTree = "<group>"; };
+		D0778E35210AF5360025EB82 /* DSLImageViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLImageViewMaker.h; sourceTree = "<group>"; };
+		D0778E36210AF5360025EB82 /* DSLImageViewMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLImageViewMaker.m; sourceTree = "<group>"; };
+		D0778E38210C14710025EB82 /* DSLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLObject.h; sourceTree = "<group>"; };
+		D0778E39210C14710025EB82 /* DSLObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLObject.m; sourceTree = "<group>"; };
+		D0778E3B210C4C260025EB82 /* UIView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DSL.h"; sourceTree = "<group>"; };
+		D0778E3C210C4C260025EB82 /* UIView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSL.m"; sourceTree = "<group>"; };
+		D0778E3E210C78EB0025EB82 /* UIImageView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DSL.h"; sourceTree = "<group>"; };
+		D0778E3F210C78EB0025EB82 /* UIImageView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DSL.m"; sourceTree = "<group>"; };
+		D0778E41210C89030025EB82 /* UIControl+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+DSL.h"; sourceTree = "<group>"; };
+		D0778E42210C89030025EB82 /* UIControl+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+DSL.m"; sourceTree = "<group>"; };
+		D0778E44210C93840025EB82 /* UIButton+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSL.h"; sourceTree = "<group>"; };
+		D0778E45210C93840025EB82 /* UIButton+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSL.m"; sourceTree = "<group>"; };
+		D0778E47210D59BD0025EB82 /* UILabel+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSL.h"; sourceTree = "<group>"; };
+		D0778E48210D59BD0025EB82 /* UILabel+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSL.m"; sourceTree = "<group>"; };
+		D0778E4A210D71330025EB82 /* UITextField+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+DSL.h"; sourceTree = "<group>"; };
+		D0778E4B210D71330025EB82 /* UITextField+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DSL.m"; sourceTree = "<group>"; };
+		D0778E4D210D89040025EB82 /* UIScrollView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DSL.h"; sourceTree = "<group>"; };
+		D0778E4E210D89050025EB82 /* UIScrollView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DSL.m"; sourceTree = "<group>"; };
+		D0778E92210EF0890025EB82 /* UICollectionView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DSL.h"; sourceTree = "<group>"; };
+		D0778E93210EF0890025EB82 /* UICollectionView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DSL.m"; sourceTree = "<group>"; };
+		D0778E95210F05800025EB82 /* UITableView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+DSL.h"; sourceTree = "<group>"; };
+		D0778E96210F05800025EB82 /* UITableView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DSL.m"; sourceTree = "<group>"; };
+		D0778ECB211141760025EB82 /* UIView+DSLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DSLMaker.h"; sourceTree = "<group>"; };
+		D0778ECC211141760025EB82 /* UIView+DSLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSLMaker.m"; sourceTree = "<group>"; };
+		D0778ECE211141A50025EB82 /* UIImageView+DSLMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DSLMaker.h"; sourceTree = "<group>"; };
+		D0778ECF211141A50025EB82 /* UIImageView+DSLMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DSLMaker.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0778E15210AF1660025EB82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0778E0F210AF1660025EB82 = {
+			isa = PBXGroup;
+			children = (
+				D0778E1A210AF1660025EB82 /* DSL2 */,
+				D0778E19210AF1660025EB82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0778E19210AF1660025EB82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0778E18210AF1660025EB82 /* DSL2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0778E1A210AF1660025EB82 /* DSL2 */ = {
+			isa = PBXGroup;
+			children = (
+				D0778ECA21113E070025EB82 /* Category方式实现 */,
+				D0778EC921113DDB0025EB82 /* 中间类方式实现 */,
+				D0778E31210AF1800025EB82 /* DSLHeader.h */,
+				D0778E38210C14710025EB82 /* DSLObject.h */,
+				D0778E39210C14710025EB82 /* DSLObject.m */,
+				D0778E1B210AF1660025EB82 /* AppDelegate.h */,
+				D0778E1C210AF1660025EB82 /* AppDelegate.m */,
+				D0778E1E210AF1660025EB82 /* ViewController.h */,
+				D0778E1F210AF1660025EB82 /* ViewController.m */,
+				D0778E21210AF1660025EB82 /* Main.storyboard */,
+				D0778E24210AF1670025EB82 /* Assets.xcassets */,
+				D0778E26210AF1670025EB82 /* LaunchScreen.storyboard */,
+				D0778E29210AF1670025EB82 /* Info.plist */,
+				D0778E2A210AF1670025EB82 /* main.m */,
+			);
+			path = DSL2;
+			sourceTree = "<group>";
+		};
+		D0778EC921113DDB0025EB82 /* 中间类方式实现 */ = {
+			isa = PBXGroup;
+			children = (
+				D0778E32210AF18F0025EB82 /* DSLViewMaker.h */,
+				D0778E33210AF18F0025EB82 /* DSLViewMaker.m */,
+				D0778ECB211141760025EB82 /* UIView+DSLMaker.h */,
+				D0778ECC211141760025EB82 /* UIView+DSLMaker.m */,
+				D0778E35210AF5360025EB82 /* DSLImageViewMaker.h */,
+				D0778E36210AF5360025EB82 /* DSLImageViewMaker.m */,
+				D0778ECE211141A50025EB82 /* UIImageView+DSLMaker.h */,
+				D0778ECF211141A50025EB82 /* UIImageView+DSLMaker.m */,
+			);
+			path = "中间类方式实现";
+			sourceTree = "<group>";
+		};
+		D0778ECA21113E070025EB82 /* Category方式实现 */ = {
+			isa = PBXGroup;
+			children = (
+				D0778E3B210C4C260025EB82 /* UIView+DSL.h */,
+				D0778E3C210C4C260025EB82 /* UIView+DSL.m */,
+				D0778E41210C89030025EB82 /* UIControl+DSL.h */,
+				D0778E42210C89030025EB82 /* UIControl+DSL.m */,
+				D0778E44210C93840025EB82 /* UIButton+DSL.h */,
+				D0778E45210C93840025EB82 /* UIButton+DSL.m */,
+				D0778E4A210D71330025EB82 /* UITextField+DSL.h */,
+				D0778E4B210D71330025EB82 /* UITextField+DSL.m */,
+				D0778E47210D59BD0025EB82 /* UILabel+DSL.h */,
+				D0778E48210D59BD0025EB82 /* UILabel+DSL.m */,
+				D0778E4D210D89040025EB82 /* UIScrollView+DSL.h */,
+				D0778E4E210D89050025EB82 /* UIScrollView+DSL.m */,
+				D0778E95210F05800025EB82 /* UITableView+DSL.h */,
+				D0778E96210F05800025EB82 /* UITableView+DSL.m */,
+				D0778E92210EF0890025EB82 /* UICollectionView+DSL.h */,
+				D0778E93210EF0890025EB82 /* UICollectionView+DSL.m */,
+				D0778E3E210C78EB0025EB82 /* UIImageView+DSL.h */,
+				D0778E3F210C78EB0025EB82 /* UIImageView+DSL.m */,
+			);
+			path = "Category方式实现";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0778E17210AF1660025EB82 /* DSL2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0778E2E210AF1670025EB82 /* Build configuration list for PBXNativeTarget "DSL2" */;
+			buildPhases = (
+				D0778E14210AF1660025EB82 /* Sources */,
+				D0778E15210AF1660025EB82 /* Frameworks */,
+				D0778E16210AF1660025EB82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSL2;
+			productName = DSL2;
+			productReference = D0778E18210AF1660025EB82 /* DSL2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0778E10210AF1660025EB82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ws;
+				TargetAttributes = {
+					D0778E17210AF1660025EB82 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = D0778E13210AF1660025EB82 /* Build configuration list for PBXProject "DSL2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0778E0F210AF1660025EB82;
+			productRefGroup = D0778E19210AF1660025EB82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0778E17210AF1660025EB82 /* DSL2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0778E16210AF1660025EB82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0778E28210AF1670025EB82 /* LaunchScreen.storyboard in Resources */,
+				D0778E25210AF1670025EB82 /* Assets.xcassets in Resources */,
+				D0778E23210AF1660025EB82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0778E14210AF1660025EB82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0778E49210D59BD0025EB82 /* UILabel+DSL.m in Sources */,
+				D0778E3D210C4C260025EB82 /* UIView+DSL.m in Sources */,
+				D0778E97210F05800025EB82 /* UITableView+DSL.m in Sources */,
+				D0778ECD211141760025EB82 /* UIView+DSLMaker.m in Sources */,
+				D0778E20210AF1660025EB82 /* ViewController.m in Sources */,
+				D0778E34210AF18F0025EB82 /* DSLViewMaker.m in Sources */,
+				D0778ED0211141A50025EB82 /* UIImageView+DSLMaker.m in Sources */,
+				D0778E37210AF5360025EB82 /* DSLImageViewMaker.m in Sources */,
+				D0778E4C210D71330025EB82 /* UITextField+DSL.m in Sources */,
+				D0778E2B210AF1670025EB82 /* main.m in Sources */,
+				D0778E46210C93840025EB82 /* UIButton+DSL.m in Sources */,
+				D0778E94210EF0890025EB82 /* UICollectionView+DSL.m in Sources */,
+				D0778E3A210C14710025EB82 /* DSLObject.m in Sources */,
+				D0778E40210C78EB0025EB82 /* UIImageView+DSL.m in Sources */,
+				D0778E1D210AF1660025EB82 /* AppDelegate.m in Sources */,
+				D0778E43210C89030025EB82 /* UIControl+DSL.m in Sources */,
+				D0778E4F210D89050025EB82 /* UIScrollView+DSL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0778E21210AF1660025EB82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0778E22210AF1660025EB82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0778E26210AF1670025EB82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0778E27210AF1670025EB82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0778E2C210AF1670025EB82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0778E2D210AF1670025EB82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0778E2F210AF1670025EB82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HQB3HG6PA;
+				INFOPLIST_FILE = DSL2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.iOS.DSL2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0778E30210AF1670025EB82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HQB3HG6PA;
+				INFOPLIST_FILE = DSL2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.iOS.DSL2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0778E13210AF1660025EB82 /* Build configuration list for PBXProject "DSL2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0778E2C210AF1670025EB82 /* Debug */,
+				D0778E2D210AF1670025EB82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0778E2E210AF1670025EB82 /* Build configuration list for PBXNativeTarget "DSL2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0778E2F210AF1670025EB82 /* Debug */,
+				D0778E30210AF1670025EB82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0778E10210AF1660025EB82 /* Project object */;
+}
