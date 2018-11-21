@@ -15,13 +15,13 @@
 + (id) forwardingTargetForSelector:(SEL)aSelector {
     
 //    if (aSelector == @selector(walk)) {
-//        return [TZDog new];
+//        return [TZDog class];
 //    }
     
     return [super forwardingTargetForSelector:aSelector];
 }
 
-/// 方法名注册
+// 方法名注册
 + (NSMethodSignature* ) methodSignatureForSelector:(SEL)aSelector {
     if (aSelector == @selector(walk)) {
         return [NSMethodSignature signatureWithObjCTypes:"v@:"];
@@ -33,12 +33,12 @@
 
     //NSLog(@"%s", __func__);
 
-   // [anInvocation invokeWithTarget:[TZDog new]];
+     [anInvocation invokeWithTarget:[TZDog new]];
 
     /// 转发给自己
-    anInvocation.selector = @selector(run);
-    anInvocation.target = self;
-    [anInvocation invoke];
+//    anInvocation.selector = @selector(run);
+//    anInvocation.target = self;
+//    [anInvocation invoke];
 }
 
 + (void) run {

@@ -98471,12 +98471,8 @@ objc_msgSendv_stret(void * _Nonnull stretAddr, id _Nullable self,
 int main(int argc, const char * argv[]) {
     /* @autoreleasepool */ { __AtAutoreleasePool __autoreleasepool; 
 
-        ((void (*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("TZPerson"), sel_registerName("run"));
-
-
-
-
-
+        TZPerson * p =((TZPerson *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("TZPerson"), sel_registerName("new"));
+        ((void (*)(id, SEL))(void *)objc_msgSend)((id)p, sel_registerName("walk"));
     }
     return 0;
 }

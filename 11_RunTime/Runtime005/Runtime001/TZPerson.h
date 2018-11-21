@@ -10,7 +10,7 @@
 
 @interface TZPerson : NSObject
 
-+ (void) walk;
+- (void) walk;
 
 
 

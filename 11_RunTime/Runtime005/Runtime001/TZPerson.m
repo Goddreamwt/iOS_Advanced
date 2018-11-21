@@ -13,11 +13,11 @@
 @implementation TZPerson
 
 - (id) forwardingTargetForSelector:(SEL)aSelector {
-    
+
 //    if (aSelector == @selector(walk)) {
 //        return [TZDog new];
 //    }
-    
+
     return [super forwardingTargetForSelector:aSelector];
 }
 
@@ -32,8 +32,8 @@
 - (void) forwardInvocation:(NSInvocation *)anInvocation {
     
    // NSLog(@"%s", __func__);
-    
-   // [anInvocation invokeWithTarget:[TZDog new]];
+   //转到其他类
+//    [anInvocation invokeWithTarget:[TZDog new]];
     
     /// 转发给自己
     anInvocation.selector = @selector(run);

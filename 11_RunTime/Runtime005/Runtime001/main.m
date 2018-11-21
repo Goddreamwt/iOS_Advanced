@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         instrumentObjcMessageSends(YES);
-        [TZPerson walk];
+        [[TZPerson new] walk];
         instrumentObjcMessageSends(NO);
     }
     return 0;

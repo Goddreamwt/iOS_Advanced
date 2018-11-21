@@ -15,19 +15,20 @@
 //    NSLog(@"%s", __func__);
 //}
 
+-(void) run {
+    NSLog(@"%s",__func__);
+}
+//C语言方法
 //void walk() {
 //    NSLog(@"%s", __func__);
 //}
 
-- (void) run {
-    NSLog(@"%s", __func__);
-}
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     NSLog(@"%s", __func__);
     
-//    // 元类
-//    // 实例对象、类对象、元类对象
+    // 元类
+    // 实例对象、类对象、元类对象
 //    if (sel == @selector(walk)) {
 //        return class_addMethod(self, sel, (IMP)walk, "v@:");
 //    }
@@ -39,9 +40,7 @@
         NSLog(@"%s", types);
         return class_addMethod(self, sel, runIMP, types);
     }
-    
 
-    
     return [super resolveInstanceMethod:sel];
 }
 

@@ -15,13 +15,20 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+//        TZPerson * p =[TZPerson new];
+//        [p walk];
+        
+//        NSLog(@"%p,%p",@selector(walk),sel_registerName("walk"));
+//        objc_msgSend(p, sel_registerName("walk"));
+//         objc_msgSend(p, @selector(walk));
+        
         [TZPerson run];
         objc_msgSend(objc_getClass("TZPerson"), @selector(run));
        
-        // TZPerson* p = [TZPerson new];
-       // [p walk];
+         TZPerson* p = [TZPerson new];
+        [p walk];
 
-       // objc_msgSend(p, @selector(walk));
+        objc_msgSend(p, @selector(walk));
         
         // 本质是消息机制: 消息接收者  消息名称
         

@@ -252,7 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				DEVELOPMENT_TEAM = XV99QKSRHM;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -262,7 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				DEVELOPMENT_TEAM = XV99QKSRHM;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

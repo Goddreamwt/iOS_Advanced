@@ -12,6 +12,6 @@
 
 //- (void) walk;
 //
-//- (void) run;
+- (void) run;
 
 @end

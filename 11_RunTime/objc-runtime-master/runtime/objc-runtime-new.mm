@@ -4570,6 +4570,7 @@ log_and_fill_cache(Class cls, IMP imp, SEL sel, id receiver, Class implementer)
 **********************************************************************/
 IMP _class_lookupMethodAndLoadCache3(id obj, SEL sel, Class cls)
 {
+    
     return lookUpImpOrForward(cls, sel, obj, 
                               YES/*initialize*/, NO/*cache*/, YES/*resolver*/);
 }
