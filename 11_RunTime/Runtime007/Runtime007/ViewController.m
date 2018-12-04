@@ -76,5 +76,8 @@ void hunting(id self, SEL _cmd) {
     
 }
 
+-(void)dealloc{
+    NSLog(@"线程走了");
+}
 
 @end
