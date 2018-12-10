@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CF79F421BE45C80073EB46 /* WTDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79F321BE45C80073EB46 /* WTDog.m */; };
 		04E0005A21BA45FF00A7320A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E0005921BA45FF00A7320A /* AppDelegate.m */; };
 		04E0005D21BA45FF00A7320A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E0005C21BA45FF00A7320A /* ViewController.m */; };
 		04E0006021BA45FF00A7320A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E0005E21BA45FF00A7320A /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CF79F221BE45C80073EB46 /* WTDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTDog.h; sourceTree = "<group>"; };
+		04CF79F321BE45C80073EB46 /* WTDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTDog.m; sourceTree = "<group>"; };
 		04E0005521BA45FE00A7320A /* KVC_001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVC_001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E0005821BA45FF00A7320A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04E0005921BA45FF00A7320A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				04E0006121BA45FF00A7320A /* KVC_001.xcdatamodeld */,
 				04E0008D21BA489E00A7320A /* WTPerson.h */,
 				04E0008E21BA489E00A7320A /* WTPerson.m */,
+				04CF79F221BE45C80073EB46 /* WTDog.h */,
+				04CF79F321BE45C80073EB46 /* WTDog.m */,
 			);
 			path = KVC_001;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				04E0006321BA45FF00A7320A /* KVC_001.xcdatamodeld in Sources */,
 				04E0008F21BA489E00A7320A /* WTPerson.m in Sources */,
 				04E0005D21BA45FF00A7320A /* ViewController.m in Sources */,
+				04CF79F421BE45C80073EB46 /* WTDog.m in Sources */,
 				04E0006B21BA460A00A7320A /* main.m in Sources */,
 				04E0005A21BA45FF00A7320A /* AppDelegate.m in Sources */,
 			);

@@ -35,10 +35,14 @@
     //[self.text setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
     
     //验证KVC赋值过程
-//    [p setValue:@"wt" forKey:@"name"];
+    //[p setValue:@"wt" forKey:@"name"];
     
     //验证KVC取值过程
-    NSLog(@"name = %@",[p valueForKey:@"name"]);
+    //NSLog(@"name = %@",[p valueForKey:@"name"]);
+    
+    //setValueforKey与setValueforKeyPath的区别
+    [p setValue:@"wt的🐶" forKeyPath:@"dog.name"];
+    NSLog(@"dog.name = %@",[p valueForKeyPath:@"dog.name"]);
     
     NSLog(@"name = %@",p->name);
 //    NSLog(@"_name = %@",p->_name);

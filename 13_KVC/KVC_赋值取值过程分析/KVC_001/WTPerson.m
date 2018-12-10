@@ -10,6 +10,15 @@
 
 @implementation WTPerson
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.dog = [WTDog new];
+    }
+    return self;
+}
+
 //-(void)setName:(NSString *)name{
 //    NSLog(@"%s",__func__);
 //}

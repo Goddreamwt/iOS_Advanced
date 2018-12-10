@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WTDog.h"
 
 @interface WTPerson : NSObject{
     @public  //@protect默认
@@ -16,5 +17,6 @@
     NSString * isName;
 }
 
+@property(nonatomic,strong)WTDog * dog;
 
 @end
