@@ -10,6 +10,9 @@
 
 @implementation Utils
 
-- (NSString*)md5WithFileName:(NSString *)url;
+- (NSString*)md5WithFileName:(NSString *)url{
+    //将SDWebImage->MD5算法拿过来封装
+    return nil;
+}
 
 @end

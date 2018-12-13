@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BusinessLayer.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    BusinessLayer * layer =[BusinessLayer new];
+    [layer login:@"wt" password:@"888888888"];
 }
 
 

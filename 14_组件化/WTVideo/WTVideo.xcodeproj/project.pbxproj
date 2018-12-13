@@ -16,6 +16,10 @@
 		04AA357721C24C620072462A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA357621C24C620072462A /* main.m */; };
 		04AA358121C24C620072462A /* WTVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA358021C24C620072462A /* WTVideoTests.m */; };
 		04AA358C21C24C620072462A /* WTVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA358B21C24C620072462A /* WTVideoUITests.m */; };
+		04EF153E21C268890019F406 /* libBusinessLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA35F521C25C1A0072462A /* libBusinessLayer.a */; };
+		04EF153F21C2688F0019F406 /* libDataLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA35FB21C25C270072462A /* libDataLayer.a */; };
+		04EF154021C268930019F406 /* libNetworkLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF153321C2616B0019F406 /* libNetworkLayer.a */; };
+		04EF154121C268970019F406 /* libUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA360D21C25CDA0072462A /* libUtils.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,34 @@
 			remoteGlobalIDString = 04EF152021C261330019F406;
 			remoteInfo = NetworkLayer;
 		};
+		04EF153521C267BF0019F406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AA35F021C25C1A0072462A /* BusinessLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AA35B921C251E30072462A;
+			remoteInfo = BusinessLayer;
+		};
+		04EF153721C267C30019F406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AA35F621C25C270072462A /* DataLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AA35CE21C252A50072462A;
+			remoteInfo = DataLayer;
+		};
+		04EF153921C267C70019F406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AA360821C25CDA0072462A /* Utils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AA35E321C256DA0072462A;
+			remoteInfo = Utils;
+		};
+		04EF153B21C267CA0019F406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EF152C21C2616B0019F406 /* NetworkLayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EF151F21C261330019F406;
+			remoteInfo = NetworkLayer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EF154121C268970019F406 /* libUtils.a in Frameworks */,
+				04EF154021C268930019F406 /* libNetworkLayer.a in Frameworks */,
+				04EF153F21C2688F0019F406 /* libDataLayer.a in Frameworks */,
+				04EF153E21C268890019F406 /* libBusinessLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +155,7 @@
 				04AA357F21C24C620072462A /* WTVideoTests */,
 				04AA358A21C24C620072462A /* WTVideoUITests */,
 				04AA356221C24C4C0072462A /* Products */,
+				04EF153D21C268890019F406 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +172,7 @@
 		04AA356321C24C4C0072462A /* WTVideo */ = {
 			isa = PBXGroup;
 			children = (
+				04AA357521C24C620072462A /* Info.plist */,
 				04AA359B21C24F970072462A /* UI */,
 				04AA359A21C24F4C0072462A /* Dependencies */,
 				04AA359921C24F3F0072462A /* Others */,
@@ -170,7 +208,6 @@
 				04AA356A21C24C4D0072462A /* Main.storyboard */,
 				04AA357021C24C620072462A /* Assets.xcassets */,
 				04AA357221C24C620072462A /* LaunchScreen.storyboard */,
-				04AA357521C24C620072462A /* Info.plist */,
 				04AA357621C24C620072462A /* main.m */,
 				04AA356D21C24C4D0072462A /* WTVideo.xcdatamodeld */,
 			);
@@ -227,6 +264,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		04EF153D21C268890019F406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,6 +285,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				04EF153C21C267CA0019F406 /* PBXTargetDependency */,
+				04EF153A21C267C70019F406 /* PBXTargetDependency */,
+				04EF153821C267C30019F406 /* PBXTargetDependency */,
+				04EF153621C267BF0019F406 /* PBXTargetDependency */,
 			);
 			name = WTVideo;
 			productName = WTVideo;
@@ -442,6 +490,26 @@
 			target = 04AA356021C24C4C0072462A /* WTVideo */;
 			targetProxy = 04AA358821C24C620072462A /* PBXContainerItemProxy */;
 		};
+		04EF153621C267BF0019F406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BusinessLayer;
+			targetProxy = 04EF153521C267BF0019F406 /* PBXContainerItemProxy */;
+		};
+		04EF153821C267C30019F406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DataLayer;
+			targetProxy = 04EF153721C267C30019F406 /* PBXContainerItemProxy */;
+		};
+		04EF153A21C267C70019F406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Utils;
+			targetProxy = 04EF153921C267C70019F406 /* PBXContainerItemProxy */;
+		};
+		04EF153C21C267CA0019F406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkLayer;
+			targetProxy = 04EF153B21C267CA0019F406 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -588,6 +656,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wt.video.demo.WTVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/WTVideo/Dependencies/BusinessLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/DataLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/NetworkLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/Utils/**",
+				);
 			};
 			name = Debug;
 		};
@@ -605,6 +679,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wt.video.demo.WTVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/WTVideo/Dependencies/BusinessLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/DataLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/NetworkLayer/**",
+					"$(SRCROOT)/WTVideo/Dependencies/Utils/**",
+				);
 			};
 			name = Release;
 		};
