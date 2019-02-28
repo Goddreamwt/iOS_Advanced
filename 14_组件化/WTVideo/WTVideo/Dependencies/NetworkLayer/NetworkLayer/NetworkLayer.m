@@ -7,6 +7,7 @@
 //
 
 #import "NetworkLayer.h"
+#import "AFNetworking.h"
 
 @implementation NetworkLayer
 

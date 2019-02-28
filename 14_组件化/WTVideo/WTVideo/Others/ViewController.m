@@ -21,7 +21,6 @@
     [layer login:@"wt" password:@"888888888"];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

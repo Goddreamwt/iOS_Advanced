@@ -20,6 +20,7 @@
 		04EF153F21C2688F0019F406 /* libDataLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA35FB21C25C270072462A /* libDataLayer.a */; };
 		04EF154021C268930019F406 /* libNetworkLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EF153321C2616B0019F406 /* libNetworkLayer.a */; };
 		04EF154121C268970019F406 /* libUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA360D21C25CDA0072462A /* libUtils.a */; };
+		B3F1D82A52F5FF37086C7043 /* libPods-WTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F366AA19A384742CA3CDC91 /* libPods-WTVideo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,9 @@
 		04AA35F621C25C270072462A /* DataLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataLayer.xcodeproj; path = DataLayer/DataLayer.xcodeproj; sourceTree = "<group>"; };
 		04AA360821C25CDA0072462A /* Utils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utils.xcodeproj; path = Utils/Utils.xcodeproj; sourceTree = "<group>"; };
 		04EF152C21C2616B0019F406 /* NetworkLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkLayer.xcodeproj; path = NetworkLayer/NetworkLayer.xcodeproj; sourceTree = "<group>"; };
+		1F366AA19A384742CA3CDC91 /* libPods-WTVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF7804D8D7E159B99B170B1 /* Pods-WTVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTVideo/Pods-WTVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		F96FF1C0EB05E4311789DC01 /* Pods-WTVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTVideo/Pods-WTVideo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				04EF154021C268930019F406 /* libNetworkLayer.a in Frameworks */,
 				04EF153F21C2688F0019F406 /* libDataLayer.a in Frameworks */,
 				04EF153E21C268890019F406 /* libBusinessLayer.a in Frameworks */,
+				B3F1D82A52F5FF37086C7043 /* libPods-WTVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +161,7 @@
 				04AA358A21C24C620072462A /* WTVideoUITests */,
 				04AA356221C24C4C0072462A /* Products */,
 				04EF153D21C268890019F406 /* Frameworks */,
+				57C29D6D8E665731E3779A3A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,8 +273,18 @@
 		04EF153D21C268890019F406 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F366AA19A384742CA3CDC91 /* libPods-WTVideo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57C29D6D8E665731E3779A3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF7804D8D7E159B99B170B1 /* Pods-WTVideo.debug.xcconfig */,
+				F96FF1C0EB05E4311789DC01 /* Pods-WTVideo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04AA359021C24C620072462A /* Build configuration list for PBXNativeTarget "WTVideo" */;
 			buildPhases = (
+				BDB47EA4A97310E6BE5F11D5 /* [CP] Check Pods Manifest.lock */,
 				04AA355D21C24C4C0072462A /* Sources */,
 				04AA355E21C24C4C0072462A /* Frameworks */,
 				04AA355F21C24C4C0072462A /* Resources */,
@@ -448,6 +465,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDB47EA4A97310E6BE5F11D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04AA355D21C24C4C0072462A /* Sources */ = {
@@ -644,6 +682,7 @@
 		};
 		04AA359121C24C620072462A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF7804D8D7E159B99B170B1 /* Pods-WTVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,6 +706,7 @@
 		};
 		04AA359221C24C620072462A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96FF1C0EB05E4311789DC01 /* Pods-WTVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

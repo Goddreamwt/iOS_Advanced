@@ -7,6 +7,7 @@
 //
 
 #import "DataLayer.h"
+#import "YYModel.h"
 
 @implementation DataLayer
 

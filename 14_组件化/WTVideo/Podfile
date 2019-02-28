@@ -1,0 +1,6 @@
+target 'WTVideo' do     
+
+pod 'AFNetworking', '~> 3.2.0'
+pod 'YYModel', '~> 1.0.4'
+
+end

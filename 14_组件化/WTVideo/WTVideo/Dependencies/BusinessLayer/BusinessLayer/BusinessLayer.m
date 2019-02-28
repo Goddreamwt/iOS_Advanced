@@ -7,12 +7,23 @@
 //
 
 #import "BusinessLayer.h"
+#import "DataLayer.h"
+#import "Utils.h"
+#import "NetworkLayer.h"
 
 @implementation BusinessLayer
 
 
 - (void) login:(NSString*)username password:(NSString *)password{
     NSLog(@"调用业务层：用户进行登录操作");
+    DataLayer * datalayer = [DataLayer new];
+    [datalayer insertUser:username userName:password];
+    
+    Utils * utils = [Utils new];
+    [utils md5WithFileName:password];
+    
+    NetworkLayer * networkLayer = [NetworkLayer new];
+    [networkLayer post:username password:password];
 }
 
 @end
