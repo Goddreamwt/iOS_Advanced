@@ -13,12 +13,16 @@
 		041FAF772227C8F30038F7B4 /* FollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FAF762227C8F30038F7B4 /* FollowViewController.m */; };
 		041FAF7A2227C92B0038F7B4 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FAF792227C92B0038F7B4 /* DiscoveryViewController.m */; };
 		041FAF7D2227C9A10038F7B4 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FAF7C2227C9A10038F7B4 /* UserCenterViewController.m */; };
+		041FAF802227EE110038F7B4 /* WTCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FAF7F2227EE110038F7B4 /* WTCollectionViewProxy.m */; };
 		0443EAEE2227AF620042ACCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443EAED2227AF620042ACCF /* AppDelegate.m */; };
 		0443EAF42227AF620042ACCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443EAF22227AF620042ACCF /* Main.storyboard */; };
 		0443EAF62227AF770042ACCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0443EAF52227AF770042ACCF /* Assets.xcassets */; };
 		0443EAF92227AF770042ACCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443EAF72227AF770042ACCF /* LaunchScreen.storyboard */; };
 		0443EAFC2227AF770042ACCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443EAFB2227AF770042ACCF /* main.m */; };
 		0443EB082227B6760042ACCF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443EB072227B6760042ACCF /* MainViewController.m */; };
+		04A967CD2229216200A352A2 /* WTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967CC2229216200A352A2 /* WTCollectionViewCell.m */; };
+		04A967D02229220800A352A2 /* HomeCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */; };
+		04A967D32229224200A352A2 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967D22229224200A352A2 /* HomeCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,8 @@
 		041FAF792227C92B0038F7B4 /* DiscoveryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
 		041FAF7B2227C9A10038F7B4 /* UserCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
 		041FAF7C2227C9A10038F7B4 /* UserCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		041FAF7E2227EE110038F7B4 /* WTCollectionViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCollectionViewProxy.h; sourceTree = "<group>"; };
+		041FAF7F2227EE110038F7B4 /* WTCollectionViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCollectionViewProxy.m; sourceTree = "<group>"; };
 		0443EAE92227AF610042ACCF /* recreation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recreation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443EAEC2227AF620042ACCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0443EAED2227AF620042ACCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +50,12 @@
 		0443EAFB2227AF770042ACCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0443EB062227B6760042ACCF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0443EB072227B6760042ACCF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		04A967CB2229216200A352A2 /* WTCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCollectionViewCell.h; sourceTree = "<group>"; };
+		04A967CC2229216200A352A2 /* WTCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCollectionViewCell.m; sourceTree = "<group>"; };
+		04A967CE2229220800A352A2 /* HomeCollectionViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewProxy.h; sourceTree = "<group>"; };
+		04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewProxy.m; sourceTree = "<group>"; };
+		04A967D12229224200A352A2 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		04A967D22229224200A352A2 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,10 @@
 			children = (
 				041FAF722227C7650038F7B4 /* HomeViewController.h */,
 				041FAF732227C7650038F7B4 /* HomeViewController.m */,
+				04A967CE2229220800A352A2 /* HomeCollectionViewProxy.h */,
+				04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */,
+				04A967D12229224200A352A2 /* HomeCollectionViewCell.h */,
+				04A967D22229224200A352A2 /* HomeCollectionViewCell.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -145,6 +161,10 @@
 				041FAF6D2227BF200038F7B4 /* WTBaseViewController.m */,
 				041FAF6F2227C4460038F7B4 /* WTNavigationViewController.h */,
 				041FAF702227C4460038F7B4 /* WTNavigationViewController.m */,
+				041FAF7E2227EE110038F7B4 /* WTCollectionViewProxy.h */,
+				041FAF7F2227EE110038F7B4 /* WTCollectionViewProxy.m */,
+				04A967CB2229216200A352A2 /* WTCollectionViewCell.h */,
+				04A967CC2229216200A352A2 /* WTCollectionViewCell.m */,
 			);
 			path = "Share(共享)";
 			sourceTree = "<group>";
@@ -219,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041FAF802227EE110038F7B4 /* WTCollectionViewProxy.m in Sources */,
 				041FAF6E2227BF200038F7B4 /* WTBaseViewController.m in Sources */,
 				0443EAFC2227AF770042ACCF /* main.m in Sources */,
 				041FAF772227C8F30038F7B4 /* FollowViewController.m in Sources */,
@@ -226,7 +247,10 @@
 				0443EAEE2227AF620042ACCF /* AppDelegate.m in Sources */,
 				041FAF7A2227C92B0038F7B4 /* DiscoveryViewController.m in Sources */,
 				041FAF742227C7650038F7B4 /* HomeViewController.m in Sources */,
+				04A967D32229224200A352A2 /* HomeCollectionViewCell.m in Sources */,
 				041FAF7D2227C9A10038F7B4 /* UserCenterViewController.m in Sources */,
+				04A967CD2229216200A352A2 /* WTCollectionViewCell.m in Sources */,
+				04A967D02229220800A352A2 /* HomeCollectionViewProxy.m in Sources */,
 				0443EB082227B6760042ACCF /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
