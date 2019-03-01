@@ -32,14 +32,21 @@
     [self.view addSubview:self.collectionViewProxy.collectionView];
 }
 
-#pragma mark properties
+#pragma mark properties 懒加载
 // cell的回调就在这里面通过block来进行处理
 - (HomeCollectionViewProxy *)collectionViewProxy {
     if (!_collectionViewProxy) {
         // 配置信息在这处理
         _collectionViewProxy = [[HomeCollectionViewProxy alloc] initWithReuseIdentifier:@"HomeCollectionViewCell" configuration:^(UICollectionViewCell *cell, id cellData, NSIndexPath *indexPath) {
             // 代码
-            
+            //1.3改变cell颜色,运行起来可以看到效果
+            if (indexPath.row == 0) {
+                cell.backgroundColor = [UIColor redColor];
+            } else if (indexPath.row == 1) {
+                cell.backgroundColor = [UIColor blueColor];
+            } else if (indexPath.row == 2) {
+                cell.backgroundColor = [UIColor yellowColor];
+            }
         } action:^(UICollectionViewCell *cell, id cellData, NSIndexPath *indexPath) {
             // 点击事件到这里面处理.
             

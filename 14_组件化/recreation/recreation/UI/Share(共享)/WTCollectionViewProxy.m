@@ -19,7 +19,7 @@
         _cellConfigBlock = cBlock;
         _cellActionBlock = aBlock;
         
-        _collectionView = [UICollectionView new];
+//        _collectionView = [UICollectionView new];
     }
     return self;
 }

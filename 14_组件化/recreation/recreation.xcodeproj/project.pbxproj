@@ -23,6 +23,8 @@
 		04A967CD2229216200A352A2 /* WTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967CC2229216200A352A2 /* WTCollectionViewCell.m */; };
 		04A967D02229220800A352A2 /* HomeCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */; };
 		04A967D32229224200A352A2 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967D22229224200A352A2 /* HomeCollectionViewCell.m */; };
+		04A967D62229313B00A352A2 /* WTTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967D52229313A00A352A2 /* WTTableViewProxy.m */; };
+		04A967D9222933CE00A352A2 /* HomeTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A967D8222933CE00A352A2 /* HomeTableViewProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,10 @@
 		04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewProxy.m; sourceTree = "<group>"; };
 		04A967D12229224200A352A2 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		04A967D22229224200A352A2 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		04A967D42229313A00A352A2 /* WTTableViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTableViewProxy.h; sourceTree = "<group>"; };
+		04A967D52229313A00A352A2 /* WTTableViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTableViewProxy.m; sourceTree = "<group>"; };
+		04A967D7222933CE00A352A2 /* HomeTableViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewProxy.h; sourceTree = "<group>"; };
+		04A967D8222933CE00A352A2 /* HomeTableViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 				04A967CF2229220800A352A2 /* HomeCollectionViewProxy.m */,
 				04A967D12229224200A352A2 /* HomeCollectionViewCell.h */,
 				04A967D22229224200A352A2 /* HomeCollectionViewCell.m */,
+				04A967D7222933CE00A352A2 /* HomeTableViewProxy.h */,
+				04A967D8222933CE00A352A2 /* HomeTableViewProxy.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 				041FAF7F2227EE110038F7B4 /* WTCollectionViewProxy.m */,
 				04A967CB2229216200A352A2 /* WTCollectionViewCell.h */,
 				04A967CC2229216200A352A2 /* WTCollectionViewCell.m */,
+				04A967D42229313A00A352A2 /* WTTableViewProxy.h */,
+				04A967D52229313A00A352A2 /* WTTableViewProxy.m */,
 			);
 			path = "Share(共享)";
 			sourceTree = "<group>";
@@ -246,12 +256,14 @@
 				041FAF712227C4460038F7B4 /* WTNavigationViewController.m in Sources */,
 				0443EAEE2227AF620042ACCF /* AppDelegate.m in Sources */,
 				041FAF7A2227C92B0038F7B4 /* DiscoveryViewController.m in Sources */,
+				04A967D62229313B00A352A2 /* WTTableViewProxy.m in Sources */,
 				041FAF742227C7650038F7B4 /* HomeViewController.m in Sources */,
 				04A967D32229224200A352A2 /* HomeCollectionViewCell.m in Sources */,
 				041FAF7D2227C9A10038F7B4 /* UserCenterViewController.m in Sources */,
 				04A967CD2229216200A352A2 /* WTCollectionViewCell.m in Sources */,
 				04A967D02229220800A352A2 /* HomeCollectionViewProxy.m in Sources */,
 				0443EB082227B6760042ACCF /* MainViewController.m in Sources */,
+				04A967D9222933CE00A352A2 /* HomeTableViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

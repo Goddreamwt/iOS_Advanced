@@ -7,7 +7,11 @@
 //
 
 #import "WTCollectionViewCell.h"
+#import "HomeTableViewProxy.h"
 
 @interface HomeCollectionViewCell : WTCollectionViewCell
+
+//1.3版本-新增属性
+@property (nonatomic, strong) HomeTableViewProxy *tableViewProxy;
 
 @end
