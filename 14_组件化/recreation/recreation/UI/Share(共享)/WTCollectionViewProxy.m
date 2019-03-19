@@ -40,7 +40,7 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         // 注册cell
-        [_collectionView registerClass:NSClassFromString(@"") forCellWithReuseIdentifier:@""];
+//        [_collectionView registerClass:NSClassFromString(@"") forCellWithReuseIdentifier:@""];
     }
     return _collectionView;
 }

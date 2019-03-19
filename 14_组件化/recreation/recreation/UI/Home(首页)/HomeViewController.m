@@ -30,6 +30,12 @@
     [self.view addSubview:_tabSegmentedControl];
     
     [self.view addSubview:self.collectionViewProxy.collectionView];
+    
+    //1.5用Masonry进行自动布局-------------------
+    // 设置约束
+    [self.collectionViewProxy.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 #pragma mark properties 懒加载
