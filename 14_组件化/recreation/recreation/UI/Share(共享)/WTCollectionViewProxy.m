@@ -58,7 +58,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_reuseIdentifier forIndexPath:indexPath];
     // 需要controller做的事,就通过block回调过去,让它来处理
     if (_cellConfigBlock) {
         _cellConfigBlock(cell,_dataArray[indexPath.row], indexPath);

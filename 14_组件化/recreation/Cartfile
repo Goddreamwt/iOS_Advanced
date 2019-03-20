@@ -1,1 +1,3 @@
 github "SnapKit/Masonry"
+github "jsonmodel/jsonmodel"
+github "AFNetworking/AFNetworking" ~> 3.0

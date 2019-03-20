@@ -10,4 +10,7 @@
 
 @interface WTBaseViewController : UIViewController
 
+//---------------1.6 模仿cell,在基类设置contentView. 用来解决齐刘海安全区域的问题----------------
+@property (nonatomic, strong) UIView *contentView; /**< 自定义内容容器 */
+
 @end

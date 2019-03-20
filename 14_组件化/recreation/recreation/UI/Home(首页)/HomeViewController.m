@@ -12,9 +12,10 @@
 @interface HomeViewController ()
 
 @property (nonatomic, strong) id dataManager;
-@property (nonatomic, strong) NSArray *dataArray;
-//选项卡控制器
-@property (nonatomic, strong) UIView *tabSegmentedControl;
+//---------------------------1.7 去掉属性 --------------------------
+// 可以去掉了, 在collectionViewProxy中已经有SegmentedControl
+//@property (nonatomic, strong) UIView *tabSegmentedControl;
+//---------------------------------end-------------------------------------
 @property (nonatomic, strong) HomeCollectionViewProxy *collectionViewProxy;
 
 @end
@@ -23,18 +24,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
-    // 初始化,将collectionView添加到view
-    _tabSegmentedControl = [UIView new];
-    [self.view addSubview:_tabSegmentedControl];
+    //---------------------------1.7 改成segmentedControl --------------------------
+    // 将segmentedControl添加到collectionView
+    [self.contentView addSubview:self.collectionViewProxy.segmentedControl];
+    [_collectionViewProxy.segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        // 收尾顶部的约束
+        make.leading.trailing.top.equalTo(self.contentView);
+        make.height.equalTo(@50);
+    }];
+    //---------------------------------end-------------------------------------
     
-    [self.view addSubview:self.collectionViewProxy.collectionView];
+    [self.contentView addSubview:self.collectionViewProxy.collectionView];
     
-    //1.5用Masonry进行自动布局-------------------
+    //----------------------1.5用Masonry进行自动布局-------------------
     // 设置约束
     [self.collectionViewProxy.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.top.equalTo(self->_collectionViewProxy.segmentedControl.mas_bottom);
+        make.leading.trailing.bottom.equalTo(self.contentView);
     }];
 }
 
@@ -57,6 +65,7 @@
             // 点击事件到这里面处理.
             
         }];
+        _collectionViewProxy.dataArray = @[@"1",@"2",@"3"];
     }
     return _collectionViewProxy;
 }

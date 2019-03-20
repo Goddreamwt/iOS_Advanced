@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.8.0",
+  "iOS" : [
+    {
+      "name" : "JSONModel",
+      "hash" : "007958d8e29a560ca87ef7aabdf354c4b6fd9e6672a329861050089d4b4bc77d"
+    }
+  ]
+}

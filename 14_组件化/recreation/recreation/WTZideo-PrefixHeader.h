@@ -10,5 +10,8 @@
 #define WTZideo_PrefixHeader_h
 
 #import "Masonry.h"
+//1.6版本-添加头文件----------------------
+#import "JSONModel.h"
+#import "WTCategoriesHeader.h"
 
 #endif /* WTZideo_PrefixHeader_h */
