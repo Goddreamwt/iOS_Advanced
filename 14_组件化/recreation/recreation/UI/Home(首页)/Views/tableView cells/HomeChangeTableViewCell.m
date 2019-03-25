@@ -1,13 +1,14 @@
 //
 //  HomeChangeTableViewCell.m
-//  recreation
+//  TZVideoDemo
 //
-//  Created by 王涛 on 2019/3/19.
-//  Copyright © 2019年 WT. All rights reserved.
+//  Created by Dream on 2018/8/1.
+//  Copyright © 2018年 TZ. All rights reserved.
 //
 
 #import "HomeChangeTableViewCell.h"
 
+//----------------------1.6版本-新增cell--------------------
 @implementation HomeChangeTableViewCell
 
 - (void)awakeFromNib {
@@ -17,8 +18,10 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
 @end
+//--------------------------end-----------------------------
+

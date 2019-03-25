@@ -7,6 +7,7 @@
 //
 
 #import "HomeCollectionViewCell.h"
+#import "WTTableViewCell.h"
 
 @implementation HomeCollectionViewCell
 
@@ -23,13 +24,28 @@
     return self;
 }
 
+//----------------------1.9版本-数据传递的方法----------------------
+- (void)configWithResponse:(HomeTemplateResponse *)response {
+    self.tableViewProxy.dataArray = response.data.copy;
+    [self.tableViewProxy.tableView reloadData];
+}
+//---------------------------------end------------------------------------
+
 //创建Cell
 - (HomeTableViewProxy *)tableViewProxy {
     if (!_tableViewProxy) {
         _tableViewProxy = [[HomeTableViewProxy alloc] initWithReuseIdentifier:@"HomeTableViewCell" configuration:^(UITableViewCell *cell, id cellData, NSIndexPath *indexPath) {
-            cell.textLabel.text = (NSString *)cellData;
+            //----------------------1.9版本-把1.4的部分全部改了,配置数据cell----------------------
+            // 配置tableView上面的cell
+            if ([cell isKindOfClass:[WTTableViewCell class]]) {
+                [(WTTableViewCell *)cell configWithData:cellData];
+            }
         } action:^(UITableViewCell *cell, id cellData, NSIndexPath *indexPath) {
-            [[[UIAlertView alloc] initWithTitle:@"table view cell" message:(NSString *)cellData delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            // 拿到数据模型
+            HomeTemplateItem *item = (HomeTemplateItem *)cellData;
+            
+            // tableView的点击事件要处理.拿到字符串模型
+            [[[UIAlertView alloc] initWithTitle:@"table view cell" message:item.templateName delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }];
         // 这个数据本应该从服务器取,这里用来模拟那边下发过来的.
         _tableViewProxy.dataArray = @[@"banner", @"title", @"banner", @"banner", @"title"];

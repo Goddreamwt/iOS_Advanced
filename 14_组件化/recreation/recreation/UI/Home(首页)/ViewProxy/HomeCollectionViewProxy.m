@@ -30,14 +30,29 @@
     if (!_segmentedControl) {
         // 初始化化
         _segmentedControl = [[WTSegmentedControl alloc] initWithFrame:CGRectZero itemWidth:60 itemTitles:@[@"精选", @"热门", @"限时特惠"]];
+        
+        //---------------------------1.8 调整了颜色设置--------------------------
         // 设置颜色
-        _segmentedControl.backgroundColor = [UIColor colorWithHexString:@"0E121B"];
+        _segmentedControl.barTintColor = [UIColor colorWithHexString:@"0E121B"];
+        _segmentedControl.tintColor = [UIColor colorWithHexString:@"FCCA07"];
+
         _segmentedControl.normalColor = [UIColor whiteColor];
         _segmentedControl.highlightColor = [UIColor colorWithHexString:@"FCCA07"];
         // 设置代理, 实现代理使collectionView连动
         _segmentedControl.delegate = self;
     }
     return _segmentedControl;
+}
+
+//---------------------------1.8版本-实现ScrollView代理方法--------------------------
+#pragma mark UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat width = CGRectGetWidth(scrollView.frame);
+    if (width > 0) {
+        CGFloat index = scrollView.contentOffset.x / width;
+        // 页面滚动,文字和黄色的线条会滚动.
+        [_segmentedControl didMoveTo:index];
+    }
 }
 
 // 实现代理点击cell的时候 collectionView会连动

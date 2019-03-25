@@ -41,6 +41,7 @@
 - (void)configCellWithTitle:(NSString *)title selectedStatus:(BOOL)isSelected {
     self.titleLabel.text = title;
     self.titleLabel.textColor = isSelected ? _highlightColor : _normalColor;
+    self.titleLabel.font = isSelected ? [UIFont boldSystemFontOfSize:16.] : [UIFont systemFontOfSize:14.];
 }
 
 @end
@@ -60,6 +61,8 @@
     if (self = [super initWithFrame:frame]) {
         _itemWidth = itemWidth;
         _itemTitles = [NSArray arrayWithArray:itemTitles];
+        //1.8版本 避免使用toolbar覆盖自己布局的子视图.先使用layoutIfNeeded
+        [self layoutIfNeeded];
         [self setupSubviews];
     }
     return self;
@@ -67,14 +70,31 @@
 
 - (void)setupSubviews {
     [self addSubview:self.collectionView];
-    [self addSubview:self.lineView];
+    
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
+    }];
+    
+    //----------------------1.8版本-黄线约束调整----------------------
+    [self addSubview:self.lineView];
+    [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@10);
+        make.bottom.equalTo(self);
+        make.width.equalTo(@(self->_itemWidth-20));
+        make.height.equalTo(@4);
     }];
     
     // 注册collection cell
     [_collectionView registerClass:[WTSegmentedControlCell class] forCellWithReuseIdentifier:NSStringFromClass([WTSegmentedControlCell class])];
     [_collectionView reloadData];
+}
+
+//----------------------1.8版本-实现方法----------------------
+// 移动
+- (void)didMoveTo:(CGFloat)index {
+    //    NSLog(@"didMoveTo %f", index);
+    [self updateLineViewIndicator:index];
+    [self moveToPage:(int)index];
 }
 
 // 黄线的滑动
@@ -84,15 +104,32 @@
         return;
     }
     // 计算位置
-    CGRect oFrame = _lineView.frame;
-    oFrame.origin.x = index * _itemWidth + 10;
-    _lineView.frame = oFrame;
+//    CGRect oFrame = _lineView.frame;
+//    oFrame.origin.x = index * _itemWidth + 10;
+//    _lineView.frame = oFrame;
+    
+    //----------------------1.8版本-更新黄线约束----------------------
+    // 更新约束
+    [_lineView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@(index * _itemWidth + 10));
+    }];
+    //---------------------------------end----------------------
+}
+
+//----------------------1.8版本-移动页面----------------------
+// 移动页面
+- (void)moveToPage:(NSInteger)index {
+    _currentIndex = index;
+    [_collectionView reloadData];
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
 #pragma mark properties 懒加载的方法
 - (UIView *)lineView {
     if(!_lineView) {
-        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _itemWidth, 4)];
+//----------------------1.8 修改了创建方式----------------------
+//        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _itemWidth, 4)];
+        _lineView = [UIView new];
         _lineView.backgroundColor = [UIColor colorWithHexString:@"FCCA07" ];
         _lineView.layer.cornerRadius =  2.0;
     }
@@ -125,14 +162,12 @@
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     // 黄线的滑动
-    [self updateLineViewIndicator:indexPath.item];
+    //----------------------1.8 修改
+//    [self updateLineViewIndicator:indexPath.item];
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(segmentedControl:didSelectItemAtIndex:fromIndex:)]) {
         [self.delegate segmentedControl:self didSelectItemAtIndex:indexPath.item fromIndex:self.currentIndex];
     }
-    _currentIndex = indexPath.item;
-    [_collectionView reloadData];
-    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
 #pragma mark - UICollectionViewDataSource

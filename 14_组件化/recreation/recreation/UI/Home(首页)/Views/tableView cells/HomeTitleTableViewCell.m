@@ -1,14 +1,14 @@
 //
 //  HomeTitleTableViewCell.m
-//  recreation
+//  TZVideoDemo
 //
-//  Created by 王涛 on 2019/3/14.
-//  Copyright © 2019年 WT. All rights reserved.
+//  Created by Dream on 2018/7/26.
+//  Copyright © 2018年 TZ. All rights reserved.
 //
 
 #import "HomeTitleTableViewCell.h"
 
-//1.4版本-添加子类cell继承基类,显示文字
+//----------------------1.4版本-添加子类cell继承基类,显示文字的cell----------------------
 @implementation HomeTitleTableViewCell
 
 - (void)awakeFromNib {
@@ -23,3 +23,4 @@
 }
 
 @end
+//-------------------------------end-------------------------------

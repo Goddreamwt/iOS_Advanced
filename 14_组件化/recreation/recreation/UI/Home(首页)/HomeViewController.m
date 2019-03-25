@@ -8,14 +8,17 @@
 
 #import "HomeViewController.h"
 #import "HomeCollectionViewProxy.h"
+#import "HomeCollectionViewCell.h"
+#import "HomeDataSource.h"
 
 @interface HomeViewController ()
 
 @property (nonatomic, strong) id dataManager;
-//---------------------------1.7 去掉属性 --------------------------
-// 可以去掉了, 在collectionViewProxy中已经有SegmentedControl
-//@property (nonatomic, strong) UIView *tabSegmentedControl;
+//------------------------------1.9 添加数据源 -----------------------------
+// 数据源
+@property (nonatomic, strong) HomeDataSource *dataSource;
 //---------------------------------end-------------------------------------
+
 @property (nonatomic, strong) HomeCollectionViewProxy *collectionViewProxy;
 
 @end
@@ -25,7 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
-    
+    //---------------------------1.8 导航栏文字 -----------------------------
+    self.title = @"首页";
+    //------------------------------1.9 初始化 -----------------------------
+    _dataSource = [HomeDataSource new];
     //---------------------------1.7 改成segmentedControl --------------------------
     // 将segmentedControl添加到collectionView
     [self.contentView addSubview:self.collectionViewProxy.segmentedControl];
@@ -54,12 +60,17 @@
         _collectionViewProxy = [[HomeCollectionViewProxy alloc] initWithReuseIdentifier:@"HomeCollectionViewCell" configuration:^(UICollectionViewCell *cell, id cellData, NSIndexPath *indexPath) {
             // 代码
             //1.3改变cell颜色,运行起来可以看到效果
-            if (indexPath.row == 0) {
-                cell.backgroundColor = [UIColor redColor];
-            } else if (indexPath.row == 1) {
-                cell.backgroundColor = [UIColor blueColor];
-            } else if (indexPath.row == 2) {
-                cell.backgroundColor = [UIColor yellowColor];
+            //----------------------1.9 基于1.3的基础修改了频道数据------------------
+            if ([cell isKindOfClass:[HomeCollectionViewCell class]]) {
+                // 根据频道id获取分类频道的数据(推荐,it互联网,热门...)
+                [self->_dataSource getChannel:@"0" completion:^(BOOL succeed, NSError *error, id data) {
+//                    NSLog(@"%d %@ %@", succeed, error, data);
+                    // 数据响应,并且是属于响应模板的这个类
+                    if (data && [data isKindOfClass:[HomeTemplateResponse class]]) {
+                        HomeTemplateResponse *response = (HomeTemplateResponse *)data;
+                        [(HomeCollectionViewCell *)cell configWithResponse:response];
+                    }
+                }];
             }
         } action:^(UICollectionViewCell *cell, id cellData, NSIndexPath *indexPath) {
             // 点击事件到这里面处理.

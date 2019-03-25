@@ -35,21 +35,23 @@
             make.bottom.equalTo(self.mas_bottomLayoutGuide);
         }
     }];
+   
     
+    //----------------------1.9 测试跳转的按钮下个版本会删除----------------------
     //测试
-    UIButton * action = [UIButton buttonWithType:UIButtonTypeCustom];
-    [action setFrame:CGRectMake(100, 100, 100, 50)];
-    [action setTitle:@"action" forState:UIControlStateNormal];
-    [action addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:action];
+//    UIButton * action = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [action setFrame:CGRectMake(100, 100, 100, 50)];
+//    [action setTitle:@"action" forState:UIControlStateNormal];
+//    [action addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:action];
 }
 
--(void)jumpAction:(id)sender{
-    WTBaseViewController * vc = [[WTBaseViewController alloc]init];
-    //隐藏跳转页面tabbar底部
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
-}
+//-(void)jumpAction:(id)sender{
+//    WTBaseViewController * vc = [[WTBaseViewController alloc]init];
+//    //隐藏跳转页面tabbar底部
+//    vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
 
 //1.6版本-懒加载
 - (UIView *)contentView {

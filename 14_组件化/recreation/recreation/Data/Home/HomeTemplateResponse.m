@@ -8,6 +8,14 @@
 
 #import "HomeTemplateResponse.h"
 
+//----------------------1.9版本-新增数据模型--------------------
+@implementation HomeTemplateData
+@end
+
+@implementation HomeTemplateItem
+@end
+//--------------------------end-----------------------------
+
 //----------------------1.6版本-新增数据模型--------------------
 @implementation HomeTemplateResponse
 
